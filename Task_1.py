@@ -5,7 +5,7 @@
 предусмотреть обработку ситуации
 деления на ноль."""
 
-a = True
+
 
 def division(arg_1, arg_2):
 
@@ -17,7 +17,8 @@ def division(arg_1, arg_2):
         global a
         a = False
         return arg_1 / arg_2
-
+    
+a = True
 while a:
     print(division(int(input("Введите "
                              "первое число: ")), 

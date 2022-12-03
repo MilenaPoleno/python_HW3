@@ -13,9 +13,11 @@
 Необходимо использовать написанную
 ранее функцию int_func()."""
 
+
 def int_func():
     arg = input("Введите текст в нижнем "
                 "регистре: ").split()
     for el in arg:
         print(el.capitalize(), end=" ")
+
 int_func()

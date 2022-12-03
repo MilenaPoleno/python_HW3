@@ -15,16 +15,19 @@ Enter. Сумма вновь введенных чисел
 ранее сумме и после этого завершить
 программу."""
 
-my_sum = 0
-try:
-    while True:
-        num_list = input("Для выхода из "
-                      "программы введите любой "
-                      "специальный символ (не "
-                      "цифру). \n Введите числа "
-                      "через пробел: ").split()
-        for el in num_list:
-            my_sum += int(el)
-        print(my_sum)
-except ValueError:
-    print(f"{my_sum} \n Конец программы")
+def sum():
+    my_sum = 0
+    try:
+        while True:
+            num_list = input("Для выхода из "
+                          "программы введите любой "
+                          "специальный символ (не "
+                          "цифру). \n Введите числа "
+                          "через пробел: ").split()
+            for el in num_list:
+                my_sum += int(el)
+            print(my_sum)
+    except ValueError:
+        print(f"{my_sum} \n Конец программы")
+
+sum()

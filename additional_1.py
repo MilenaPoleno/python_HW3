@@ -6,13 +6,14 @@
 - [2, 3, 5, 9, 3] -> на нечётных позициях
 элементы 3 и 9, ответ: 12"""
 
+
 def odd_sum():
     result = 0
     user_list = input("Введите числа через "
                       "пробел:").split()
     for i in range(1, len(user_list), 2):
-            result = result + int(user_list[i])
+        result = result + int(user_list[i])
     print(result)
 
-odd_sum()
 
+odd_sum()
